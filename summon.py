@@ -62,7 +62,7 @@ def bot_comments():
 					column_number = cell.col
 					card_number = row_number - 1
 
-          # Builds the post
+          				# Builds the post
 					reply += "[%s](http://ThronesDB.com/card/%s%s)\n\n" % (worksheet.cell(row_number, 3).value, worksheet.cell(row_number, 1).value, worksheet.cell(row_number, 2).value)
 				else: reply += "I cannot find %s \n\n" % i
 			for i in set(cards):
@@ -80,7 +80,7 @@ def bot_comments():
 					column_number = cell.col
 					card_number = row_number - 1
 
-           # Builds the post
+        				  # Builds the post
 					if (worksheet.cell(row_number, 4).value) == 'Plot':
 						reply += "[%s](http://ThronesDB.com/card/%s%s)\n\n" % (worksheet.cell(row_number, 3).value, worksheet.cell(row_number, 1).value, worksheet.cell(row_number, 2).value)
 						reply += "Type: %s, " % (worksheet.cell(row_number, 4).value)
