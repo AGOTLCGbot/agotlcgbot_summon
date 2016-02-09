@@ -10,13 +10,13 @@ import gspread
 from oauth2client.client import SignedJwtAssertionCredentials
 
 #This is required to log in to google docs
-json_key = json.load(open('AGOTLCGLogin-b0a177aff2e3.json')) 
+json_key = json.load(open('AGOTLCGLogin.json'))  //not real key, obviously
 scope = ['https://spreadsheets.google.com/feeds']
 credentials = SignedJwtAssertionCredentials(json_key['client_email'], json_key['private_key'], scope)
 
 #This is required to log in to reddit; password omitted for security
 USERNAME = "AGOTLCGbot"
-PASSWORD = "PASSWORD"
+PASSWORD = "PASSWORD" //not real password, obviously
 USERAGENT = "AGOTLCGbot v1.0! by /u/dios_achilleus"
 
 r = praw.Reddit(USERAGENT)
